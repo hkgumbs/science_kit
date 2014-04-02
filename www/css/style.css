@@ -1,0 +1,176 @@
+/* All pages */
+body {
+
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    
+    background-attachment:fixed;
+    background-color:#94d5ee;
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #01adee),
+        color-stop(0.51, #94d5ee)
+    );
+    
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+
+}
+
+h1 {
+    /* half-circle-esque shape */
+    width: 110%;
+    height: auto;
+    padding: 25px 0px;
+    border-radius: 0px 0px 100% 100%;
+    z-index: -1;
+
+    margin: 0px;
+    top: 0px;
+    left: -5%;
+    position: fixed;
+    text-align: center;
+    
+    background: #ffffff;
+    color: #01adee;
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: 100;
+}
+
+h3 {
+    margin: 15% 15px 0;
+
+    color: #000000;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+p {
+    color: #000000;
+
+}
+
+.button1, .button2 {
+    max-width: 10em;
+    width: 100%;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1em;
+    padding: 25px 0px;
+    margin: 15px auto;
+
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #ffffff;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+.button1 {
+    background-color: #FC6042;
+}
+
+.button2 {
+    background-color: #FCB941;
+}
+
+.button_wrapper {
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+}
+
+#button_wrapper_index {
+    top: 50%;
+}
+
+#button_wrapper_experiments {
+    bottom: 0%;
+}
+
+#button_wrapper_record {
+    top: 40%;
+}
+
+.dialog {
+    width: 90%;
+    height: 60%;
+    left: 5%;
+    top: 20%;
+    position: absolute;
+
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+
+    background-color: rgba(232,232,232,.95);
+    display: none;
+}
+
+#dialog_record_instructions {
+    display: block;
+}
+
+.icon_select_plant {
+    width: 300px;
+    height:; 200px;
+    margin: 10px;
+    float: left;
+
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #ffffff;
+}
+
+.image_select_plant {
+    float: left;
+    height: 130px;
+    margin: 10px;
+    
+}
+
+.icon_select_plant_wrapper {
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    position: absolute;
+
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+.modal {
+    width: 90%;
+    height: 60%;
+    left: 5%;
+    top: 20%;
+    position: absolute;
+
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+
+    background-color: rgba(232,232,232,.95);
+    display: none;
+}
