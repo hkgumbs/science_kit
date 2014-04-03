@@ -10,25 +10,20 @@
     </head>
 
     <body>
-        <h1>Question of the Day</h1>
+        <h1>My Garden</h1>
         <img class="nav_back" src="img/back.png">
         <img class="nav_listen" src="img/listen.png">
 
-        <div class="modal" id="modal_qod">
-            <p id="p_qod">How many leaves does the plant have?</p>
-            <input type="range"  min="0" max="10" onchange="showValue(this.value)"/>
-            <p id="p_answer">5</p>
-
-            <p id="p_qod">Which sense did you you use?</p>
-            <div class="button_sense_wrapper">
-                <img class="img_senses" src="img/senses.jpg">
-            </div>
+         <div class="modal" id="modal_qod">
+            <p id="p_garden">Bean Plant 0</p>
+            <img src="img/video.jpg">
         </div>
 
-        <div class="button_wrapper" id="button_wrapper_qod">
-            <a class="button1" id="button1_qod_continue">Continue</a>
+        <div class="button_wrapper" id="button_wrapper_graden">
+            <a class="button1" id="button1_garden_share">Share</a>
+            <a class="button2" id="button2_garden_delete">Delete</a>
         </div>
 
-        <script src="js/qod.js"></script>
+        <script src="js/garden.js"></script>
     </body>
 </html>

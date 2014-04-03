@@ -56,6 +56,10 @@ $( "#button1_experiments_cancel" ).click(function() {
     $( "#dialog_index_experiments" ).fadeOut( "slow" );
 });
 
+$( "#button2_garden" ).click(function() {
+    window.open("garden.html","_self");
+});
+
 $( ".icon_select_plant" ).click(function() {
     $( "#dialog_index_experiments" ).fadeOut( "slow" );
     $( "#dialog_index_record" ).fadeIn( "slow" );

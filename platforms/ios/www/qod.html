@@ -14,7 +14,20 @@
         <img class="nav_back" src="img/back.png">
         <img class="nav_listen" src="img/listen.png">
 
-            <h3>Question 1</h3>
+        <div class="modal" id="modal_qod">
+            <p id="p_qod">How many leaves does the plant have?</p>
+            <input type="range"  min="0" max="10" onchange="showValue(this.value)"/>
+            <p id="p_answer">5</p>
+
+            <p id="p_qod">Which sense did you you use?</p>
+            <div class="button_sense_wrapper">
+                <img class="img_senses" src="img/senses.jpg">
+            </div>
+        </div>
+
+        <div class="button_wrapper" id="button_wrapper_qod">
+            <a class="button1" id="button1_qod_continue">Continue</a>
+        </div>
 
         <script src="js/qod.js"></script>
     </body>
