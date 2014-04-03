@@ -11,7 +11,28 @@
 
     <body>
         <h1>Bean Plant 1</h1>
-        <h3>16 more days to go!</h3>
-    </body>
+        <img class="nav_back" src="img/back.png">
+        <img class="nav_listen" src="img/listen.png">
 
+        <div class="modal">
+            <div class="modal_half" id="modal_half_water">
+                <p id="p_water">Did you water your plant today? It needs <strong>3/4 cups</strong> of water.</p>
+                <a class="button1" id="button1_stats_water">Yes</a>
+
+                <p id="p_details">More plant information will be displayed here.</p>
+            </div>
+
+            <div class="modal_half">
+                <img class="image_full" src="img/seedling.png">
+            </div>
+        </div>
+
+        <div class="graph_wrapper">
+            <div class="graph">
+                <p>GRAPH GOES HERE</p>
+            </div>
+        </div>
+
+        <script src="js/stats.js"></script>
+    </body>
 </html>

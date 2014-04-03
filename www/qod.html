@@ -10,29 +10,17 @@
     </head>
 
     <body>
-        <h1>Bean Plant 1</h1>
+        <h1>Question of the Day</h1>
         <img class="nav_back" src="img/back.png">
         <img class="nav_listen" src="img/listen.png">
 
-        <div class="modal">
-            <div class="modal_half" id="modal_half_water">
-                <p id="p_water">Did you water your plant today? It needs <strong>3/4 cups</strong> of water.</p>
-                <a class="button1" id="button1_stats_water">Yes</a>
-
-                <p id="p_details">More plant information will be displayed here.</p>
-            </div>
-
-            <div class="modal_half">
-                <img class="image_full" src="img/seedling.png">
-            </div>
+        <div class="modal" id="modal_qod">
+            <p id="p_qod">How many leaves does the plant have?</p>
+            <input type="range"  min="0" max="10" />
+            <p id="p_answer">5</p>
+            <p id="p_qod">Which sense did you you use?</p>
         </div>
 
-        <div class="graph_wrapper">
-            <div class="graph">
-                <p>GRAPH GOES HERE</p>
-            </div>
-        </div>
-
-        <script src="js/stats.js"></script>
+        <script src="js/qod.js"></script>
     </body>
 </html>
