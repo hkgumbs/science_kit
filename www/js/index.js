@@ -17,6 +17,9 @@
  * under the License.
  */
 var app = {
+
+    isDeviceSupported: false,
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -34,6 +37,10 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        // check if the current device is able to launch ARchitect Worlds
+        app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
+        app.wikitudePlugin.isDeviceSupported(app.onDeviceSupportedCallback, app.onDeviceNotSupportedCallback);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,6 +52,44 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+
+    // A callback which gets called if the device is able to launch ARchitect Worlds
+    onDeviceSupportedCallback: function() {
+        app.isDeviceSupported = true;
+    },
+
+    // A callback which gets called if the device is not able to start ARchitect Worlds
+    onDeviceNotSupportedCallback: function() {
+        alert("not supported forreal");
+        app.receivedEvent('Unable to launch ARchitect Worlds on this device');
+    },
+
+    onScreenCaptured: function (absoluteFilePath) {
+        alert("snapshot stored at:\n" + absoluteFilePath);
+    },
+
+    onScreenCapturedError: function (errorMessage) {
+        alert(errorMessage);
+    },
+
+    onUrlInvoke: function (url) {
+        if (url.indexOf('captureScreen') > -1) {
+            app.wikitudePlugin.captureScreen(true, null, app.onScreenCaptured, app.onScreenCapturedError);
+        } else {
+            alert(url + "not supported");
+        }
+    },
+
+    loadARchitectWorld: function() {
+        // app.wikitudePlugin.setOnUrlInvokeCallback(app.onUrlInvoke);
+        // alert("in load...");
+
+        if (app.isDeviceSupported) {
+            app.wikitudePlugin.loadARchitectWorld("record.html");
+        } else {
+            alert("Device is not supported");
+        }
     }
 };
 
@@ -66,6 +111,7 @@ $( ".icon_select_plant" ).click(function() {
 })
 
 $( "#button1_record_yes" ).click(function() {
+    // app.loadARchitectWorld();
     window.open("record.html","_self");
 });
 

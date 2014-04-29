@@ -1,0 +1,27 @@
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes.dex : \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/phonegap/helloworld/BuildConfig.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/phonegap/helloworld/HelloWorld.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/phonegap/helloworld/R$attr.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/phonegap/helloworld/R$drawable.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/phonegap/helloworld/R$string.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/phonegap/helloworld/R$xml.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/phonegap/helloworld/R.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$1.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$10.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$11.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$2$1.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$2.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$3.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$4.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$5.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$6.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$7.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$8.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$9.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$ArchitectViewPhoneGap$OnKeyUpDownListener.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$ArchitectViewPhoneGap.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$ILocationProvider.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$LocationProvider.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin.class \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/dexedLibs/classes-2f8731f9928419849baeff203c7cf8b2.jar \
+/Users/hkgumbs/Workspace/science_kit/platforms/android/ant-build/dexedLibs/wikitudesdk-3a3f4f1a46dec62d275bd9ba17599c65.jar \

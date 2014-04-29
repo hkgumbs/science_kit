@@ -14,6 +14,10 @@ $( ".nav_listen" ).click(function() {
 		'There are a variety of bean types and a seed for each kind of bean.'], $(this));
 });
 
+$( "#button2_stats_home" ).click(function() {
+	window.open("index.html","_self");
+});
+
 function read(blurbs, button) {
 	if (button.css("opacity") != 0.5) {
 		button.css("opacity", 0.5 );
