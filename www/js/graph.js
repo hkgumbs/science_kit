@@ -16,14 +16,14 @@ $( "#button_water_continue" ).click(function() {
 });
 
 var lineChartData = {
-	labels : ["January","February","March","April","May","June","July"],
+	labels : ["4/26","4/27","4/28","4/29","Yesterday","Today"],
 	datasets : [
 		{
 			fillColor : "rgba(44,201,144,0.5)",
 			strokeColor : "rgba(44,201,144,1)",
 			pointColor : "rgba(44,201,144,1)",
 			pointStrokeColor : "#fff",
-			data : [.4,.4,.5,.6,.8,1.2,2.3,2.4]
+			data : [3.5, 3.8, 3.9, 4.0, 4.1, 4.3]
 		}
 	]
 }
