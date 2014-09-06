@@ -31,20 +31,6 @@ $( "#button_qod_continue" ).click(function() {
     window.open("graph.html","_self");
 });
 
-function read(blurbs, button) {
-	if (button.css("opacity") != 0.5) {
-		button.css("opacity", 0.5 );
-		var time = 0;
-		var inc = 2500;
-		$.each(blurbs, function(index, value){
-			time = inc * index;
-			var msg = new SpeechSynthesisUtterance(value);
-			setTimeout(function(){window.speechSynthesis.speak(msg);},time);
-		});
-		setTimeout(function(){button.css("opacity", 1.0);},time + inc);
-	}
-}
-
 function showValue(newValue) {
 	document.getElementById("p_answer").innerHTML=newValue;
 }

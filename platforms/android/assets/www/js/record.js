@@ -1,9 +1,34 @@
+var newTitle = "Set the Height";
+$( "#draggable" ).draggable({
+    containment: 'body',
+});
+
 $( ".nav_back" ).click(function() {
     window.history.back();
 });
 
+$( ".nav_listen" ).click(function() {
+	if ($("h1").text() != newTitle) {
+	    read(["audio/record_1.mp3"], $(this));
+	} else {
+		read(["audio/record_2.mp3"], $(this));
+	}
+});
+
 $( "#button1_dialog_ok" ).click(function() {
-    /* $( "#dialog_experiments" ).fadeOut( "slow" ); */
+    $( "#dialog_record_instructions" ).fadeOut( "slow" ); 
+    $( ".img_placeholder" ).fadeIn( "slow" );
+    $( "#button_wrapper_record1" ).fadeIn( "slow" );
+});
+
+$( "#button_record_capture" ).click(function() {
+	$( "#button_wrapper_record1" ).fadeOut( "slow" );
+    $( "#button_wrapper_record2" ).fadeIn( "slow" );
+    $( "#draggable" ).fadeIn( "slow" );
+    $( "h1" ).text(newTitle);
+});
+
+$( "#button_record_continue" ).click(function() {
     window.open("qod.html","_self");
 });
 
@@ -49,4 +74,4 @@ var World = {
 	}
 };
 
-World.init();
+// World.init();

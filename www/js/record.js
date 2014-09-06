@@ -9,9 +9,9 @@ $( ".nav_back" ).click(function() {
 
 $( ".nav_listen" ).click(function() {
 	if ($("h1").text() != newTitle) {
-	    read(["Point your iPad at the plant.", "Make sure you can see the bottom of the cup and the top of the plant!"], $(this));
+	    read(["audio/record_1.mp3"], $(this));
 	} else {
-		read(["Drag the bar to set the plant's height."], $(this));
+		read(["audio/record_2.mp3"], $(this));
 	}
 });
 
@@ -31,20 +31,6 @@ $( "#button_record_capture" ).click(function() {
 $( "#button_record_continue" ).click(function() {
     window.open("qod.html","_self");
 });
-
-function read(blurbs, button) {
-	if (button.css("opacity") != 0.5) {
-		button.css("opacity", 0.5 );
-		var time = 0;
-		var inc = 2500;
-		$.each(blurbs, function(index, value){
-			time = inc * index;
-			var msg = new SpeechSynthesisUtterance(value);
-			setTimeout(function(){window.speechSynthesis.speak(msg);},time);
-		});
-		setTimeout(function(){button.css("opacity", 1.0);},time + inc);
-	}
-}
 
 var World = {
 	loaded: false,

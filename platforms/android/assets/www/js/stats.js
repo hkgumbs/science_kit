@@ -14,16 +14,6 @@ $( ".nav_listen" ).click(function() {
 		'There are a variety of bean types and a seed for each kind of bean.'], $(this));
 });
 
-function read(blurbs, button) {
-	if (button.css("opacity") != 0.5) {
-		button.css("opacity", 0.5 );
-		var time = 0;
-		var inc = 2500;
-		$.each(blurbs, function(index, value){
-			time = inc * index;
-			var msg = new SpeechSynthesisUtterance(value);
-			setTimeout(function(){window.speechSynthesis.speak(msg);},time);
-		});
-		setTimeout(function(){button.css("opacity", 1.0);},time + inc);
-	}
-}
+$( "#button2_stats_home" ).click(function() {
+	window.open("index.html","_self");
+});

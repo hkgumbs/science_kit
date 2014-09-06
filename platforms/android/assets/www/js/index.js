@@ -111,8 +111,8 @@ $( ".icon_select_plant" ).click(function() {
 })
 
 $( "#button1_record_yes" ).click(function() {
-    app.loadARchitectWorld();
-    // window.open("record.html","_self");
+    // app.loadARchitectWorld();
+    window.open("record.html","_self");
 });
 
 $( "#button2_record_no" ).click(function() {

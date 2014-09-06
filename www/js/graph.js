@@ -44,17 +44,3 @@ var options = {
 }
 
 var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData, options);
-
-function read(blurbs, button) {
-	if (button.css("opacity") != 0.5) {
-		button.css("opacity", 0.5 );
-		var time = 0;
-		var inc = 2500;
-		$.each(blurbs, function(index, value){
-			time = inc * index;
-			var msg = new SpeechSynthesisUtterance(value);
-			setTimeout(function(){window.speechSynthesis.speak(msg);},time);
-		});
-		setTimeout(function(){button.css("opacity", 1.0);},time + inc);
-	}
-}
