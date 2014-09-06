@@ -3,7 +3,7 @@ $( ".nav_back" ).click(function() {
 });
 
 $( ".nav_listen" ).click(function() {
-	read(["If you haven't watered your plant today, remember that it needs 3/4 cups of water!"], $(this));
+	read('audio/graph.mp3', $(this));
 });
 
 $( "#button_graph_continue" ).click(function() {

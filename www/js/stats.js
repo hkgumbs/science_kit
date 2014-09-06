@@ -3,15 +3,7 @@ $( ".nav_back" ).click(function() {
 });
 
 $( ".nav_listen" ).click(function() {
-	read([ 'Plants and vegetables start from seeds.',
-		'A seed is made up of three parts; embryo, endosperm and seed coat.',
-		'The embryo is a miniature plant in a suspended state of development.',
-		'It contains its own food supply, which is the endosperm.',
-		'The hard outer covering is the seed coat.',
-		'It protects the seed from the elements.',
-		'Once water enters the seed, the germination process begins.',
-		'Bean plants begin with seeds.',
-		'There are a variety of bean types and a seed for each kind of bean.'], $(this));
+	read('audio/stats.mp3', $(this));
 });
 
 $( "#button2_stats_home" ).click(function() {

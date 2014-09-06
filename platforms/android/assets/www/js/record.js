@@ -9,9 +9,9 @@ $( ".nav_back" ).click(function() {
 
 $( ".nav_listen" ).click(function() {
 	if ($("h1").text() != newTitle) {
-	    read(["audio/record_1.mp3"], $(this));
+	    read("audio/record_1.mp3", $(this));
 	} else {
-		read(["audio/record_2.mp3"], $(this));
+		read("audio/record_2.mp3", $(this));
 	}
 });
 

@@ -6,9 +6,7 @@ $( ".nav_back" ).click(function() {
 
 $( ".nav_listen" ).click(function() {
 
-	read([ 'Question of the Day',
-		'How many leaves does the plant have?',
-		'Which sense did you use?' ], $(this));
+	read('audio/qod.mp3', $(this));
 });
 
 $( ".img_senses" ).click(function() {

@@ -2,6 +2,7 @@ function read(audio, button) {
 	if (button.css("opacity") != 0.5) {
 		button.css("opacity", 0.5 );
 		var inc = 2500;
+        var url = 'https://raw.githubusercontent.com/hkgumbs/science_kit/master/www/' + audio;
 
         // var alert_yo = function() {
         //     alert('yo');
@@ -14,15 +15,13 @@ function read(audio, button) {
         // audioElement.setAttribute('src', audio);
         // audioElement.setAttribute('autoplay', 'autoplay');
         // $(audioElement).on("ended", function() {
-        //     button.css("opacity", 1.0);
+        //     
         // });
 
-        var my_media = new Media(audio,
-            // success callback
-             function () { console.log("playAudio():Audio Success"); },
-            // error callback
-             function (err) { console.log("playAudio():Audio Error: " + err); }
-        );
+        var callback = function () {
+            button.css("opacity", 1.0);
+        };
+        var my_media = new Media(url, callback, callback);
         
         // Play audio
         my_media.play();
